@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <!-- TODO: Add menu icons (vector/xml) for the exchange and profit calculator categories -->
+        <item
+            android:id="@+id/nav_camera"
+            android:title="@string/nav_exchanges_title" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="@string/nav_calc_title" />
+    </group>
+
+</menu>

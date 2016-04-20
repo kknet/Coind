@@ -1,0 +1,15 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.instacoind.www.coind.SettingsActivity$GeneralPreferenceFragment"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="@string/pref_header_general" />
+
+    <header
+        android:fragment="com.instacoind.www.coind.SettingsActivity$DataSourceFragment"
+        android:icon="@drawable/bank_ic_30_30"
+        android:title="@string/pref_header_data" />
+
+</preference-headers>

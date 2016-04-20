@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Coind</string>
+
+    <!-- Navigation Menu Strings/Arrays -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- Menu Names -->
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="nav_exchanges_title">Exchanges</string>
+    <string name="nav_calc_title">Profit Calculator</string>
+    <string name="pref_header_general">Currency Settings</string>
+    <string name="pref_header_data">Data Source Settings</string>
+
+    <!-- Preferences -->
+        <!-- Preference Names -->
+    <string name="pref_title_default_fiat">Default Fiat</string>
+    <string name="pref_title_btc_price_index">Bitcoin Price Index</string>
+    <string name="pref_default_display_name">USD</string>
+
+    <string name="pref_source_key">source</string>
+    <string name="pref_source_default">https://api.coindesk.com/v1/bpi/currentprice.json</string>
+    <string name="pref_currency_key">currency</string>
+    <string name="pref_currency_def">USD</string>
+
+        <!-- Preferences Arrays -->
+    <string-array name="supported_fiat_names">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>CNY</item>
+    </string-array>
+    <string-array name="supported_fiat_values">
+        <item>usd</item> <!-- USD -->
+        <item>eur</item> <!-- EUR -->
+        <item>cny</item> <!-- CNY -->
+    </string-array>
+    <string-array name="pref_index_source">
+        <item>Cex.IO</item>
+        <item>Coindesk</item>
+        <item>Coinbase</item>
+        <item>OkCoin</item>
+    </string-array>
+    <string-array name="pref_index_values">
+        <item>https://cex.io/api/ticker/BTC/</item> <!-- /prefCurrency -->
+        <item>https://api.coindesk.com/v1/bpi/currentprice.json</item>
+        <item>https://api.coinbase.com/v2/prices/spot?currency=</item> <!-- spot?currency=USD -->
+        <item>https://www.okcoin.com/api/v1/ticker.do?symbol=</item> <!-- symbol=btc_usd -->
+    </string-array>
+
+
+    <!-- Content Descriptions -->
+    <string name="coin_content_description">The Logo of the Coin currently selected as default.</string>
+
+
+</resources>
