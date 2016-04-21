@@ -3,5 +3,5 @@
     <color name="colorPrimary">#4a3fb5</color>
     <color name="colorPrimaryDark">#332b7c</color>
     <color name="colorAccent">#3fb54a</color>
-    <color name="listPriceIndexColor">#1281DB</color>
+    <color name="list_index_color">#1281DB</color>
 </resources>
