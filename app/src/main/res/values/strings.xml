@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Coind</string>
 
+    <!-- Demo Values -->
+    <string name="demo_value_zero">0.0</string>
+
     <!-- Navigation Menu Strings/Arrays -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

@@ -252,16 +252,21 @@ public class MainActivity extends AppCompatActivity
                     }
                 }
             }
-            if(this.mPrefIndex == "https://api.coindesk.com/v1/bpi/currentprice.json")
-                return parseCoindesk(bitcoinJsonStr);
-            else if (this.mPrefIndex == "https://api.coinbase.com/v2/prices/spot?currency=")
-                return parseCoinbase(bitcoinJsonStr);
-            else if (this.mPrefIndex == "https://www.okcoin.com/api/v1/ticker.do?symbol=")
-                return parseOkcoin(bitcoinJsonStr);
-            else if (this.mPrefIndex == "https://cex.io/api/ticker/BTC/")
-                return parseCex(bitcoinJsonStr);
-            else
-                return 0.0;
+
+            switch(this.mPrefIndex){
+
+                case "https://api.coindesk.com/v1/bpi/currentprice.json":
+                    return parseCoindesk(bitcoinJsonStr);
+                case "https://api.coinbase.com/v2/prices/spot?currency=":
+                    return parseCoinbase(bitcoinJsonStr);
+                case "https://www.okcoin.com/api/v1/ticker.do?symbol=":
+                    return parseOkcoin(bitcoinJsonStr);
+                case "https://cex.io/api/ticker/BTC/":
+                    return parseCex(bitcoinJsonStr);
+                default:
+                    return 0.0;
+            }
+
         }
         private Double parseCex(String bitcoinJsonStr){
             Double price = 0.0;
@@ -320,6 +325,9 @@ public class MainActivity extends AppCompatActivity
         }
         private String buildUrl(String prefFiat, String prefIndex){
             String url = null;
+            // TODO: change to clean looking switch(case) statement and make this an actual uri builder
+            // unfortunately at the current time I haven't looked at the documentation so I'm just going
+            // to combine strings.
             try {
                 if (prefIndex == "https://api.coinbase.com/v2/prices/spot?currency=") {
                     url = prefIndex + prefFiat;
